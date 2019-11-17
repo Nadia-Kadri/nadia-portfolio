@@ -1,0 +1,142 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 110px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  overflow-x: hidden;
+}
+
+.sidebar a {
+  padding: 30px 5px 30px 5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  border-bottom: #818181 solid 1px;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.custom-container {
+  margin-left: 110px; /* Same as the width of the sidenav */
+  height: 100%; 
+}
+
+.left-home {
+  background-image: url("../images/profile_image.jpg");
+  height: 100%; 
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.left-portfolio {
+  background-image: url("../images/portfolio-image.jpg");
+  height: 100%; 
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.left-contact {
+  background-image: url("../images/contact-image.jpg");
+  height: 100%; 
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.right {
+  height: 100%; 
+  width: 50%;
+  float: left;
+  padding: 20px;
+  position: relative;
+}
+
+.break {
+  background-color: #222;
+  float: left;
+  width: 120px;
+  height: 2px;
+  margin-top: 0;
+}
+
+#social-bar-container {
+  position: absolute;
+  border: #222 1px solid;
+}
+
+#social-bar a {
+  color: #222;
+  background-color: #fff;
+  text-decoration: none; 
+  text-align: center;
+  font-size: 25px; 
+  margin: 0;
+  padding: 15px 25px 15px 25px;
+}
+
+.social-bar-border {
+  border-right: 1px solid #222;
+}
+
+#portfolio-link {
+  display: block;
+  margin-bottom: 20px;
+  color: #222;
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"], 
+textarea {
+  width: 100%;
+}
+
+textarea {
+  height: 120px;
+}
+
+input[type="submit"]{
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+input[type="submit"]:hover {
+  background: grey;
+}
+
+@media (max-width: 868px) {
+  .left {
+    width: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
