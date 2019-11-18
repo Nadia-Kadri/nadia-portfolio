@@ -72,6 +72,7 @@ body {
   float: left;
   padding: 20px;
   position: relative;
+  overflow-y: scroll;
 }
 
 .break {
@@ -108,28 +109,54 @@ body {
   text-decoration: none;
 }
 
-label {
-  display: block;
+.cv-table {
+  list-style: none;
+  padding: 0;
+  margin: 0px 0px 30px 0px;
+  vertical-align: bottom;
+  display: inline-block;
 }
 
-input[type="text"], 
-textarea {
+.cv-table li:first-child {
+  border-top: 1px solid #f3f3f3;
+}
+
+.cv-table li:first-child, .cv-box .cv-table li:first-child {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.cv-table li {
+  border-bottom: 1px solid #f3f3f3;
+}
+.cv-table li {
+  color: #949494;
+}
+
+.cv-table li {
+  position: relative;
+  display: inline-block;
   width: 100%;
+  padding-left: 0px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  word-spacing: 0.1em;
+  line-height: 1.5;
 }
 
-textarea {
-  height: 120px;
+.cv-table-left {
+  float: left;
+  padding-bottom: 12px;
 }
 
-input[type="submit"]{
-  background-color: #222;
-  color: #fff;
-  border: none;
-  padding: 10px;
+.cv-table-right {
+  float: right;
+  padding-bottom: 12px;
 }
 
-input[type="submit"]:hover {
-  background: grey;
+.cv-icon {
+  text-align: center;
+  margin-right: 10px;
 }
 
 @media (max-width: 868px) {
@@ -138,5 +165,23 @@ input[type="submit"]:hover {
   }
   .right {
     width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .custom-container {
+    margin-left: 50px; /* Same as the width of the sidenav */
+  }
+  .sidebar {
+    width: 50px;
+  }
+  .sidebar a {
+    padding: 20px 3px 20px 3px;
+    font-size: 8px;
+  }
+  #social-bar a {
+    font-size: 15px; 
+    margin: 0;
+    padding: 10px 20px 10px 20px;
   }
 }
