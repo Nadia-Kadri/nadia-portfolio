@@ -111,3 +111,8 @@ body {
   margin-right: 10px;
 }
 
+svg {
+  width: 15%;
+  margin: 5px;
+}
+
