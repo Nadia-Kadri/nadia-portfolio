@@ -65,6 +65,34 @@ body {
   height: 20vh;
 }
 
+.header-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.portfolio-title {
+  height: 70vh;
+  background-color: rgba(205, 205, 205, 0.797);
+  border: white solid 10px;
+}
+
+.portfolio-rcfit7 {
+  height: 70vh;
+  background-color: rgba(205, 205, 205, 0.66);
+  border: white solid 10px;
+}
+
+.portfolio-mongoscraper {
+  height: 70vh;
+  background-color: rgba(205, 205, 205, 0.263);
+  border: white solid 10px;
+}
+
+.portfolio-unwrapped {
+  height: 70vh;
+  background-color: rgba(205, 205, 205, 0.598);
+  border: white solid 10px;
+}
 
 /* .masthead-text {
   top: 30vh;
@@ -160,13 +188,16 @@ svg {
     width: 260px;
   }
   .header-name {
+    margin-top: 20px;
     font-size: 30px;
   }
   .header-role {
-    font-size: 20px;
+    margin-top: 3px;
+    margin-bottom: 40px;
+    font-size: 18px;
   }
-  .masthead-links {
-    margin-bottom: 150px;
+  .header-links-text {
+    font-size: 20px;
   }
 }
 
@@ -175,9 +206,11 @@ svg {
     width: 260px;
   }
   .header-name {
+    margin-top: 20px;
     font-size: 25px;
   }
   .header-role {
+    margin-top: 10px;
     font-size: 15px;
   }
 }
