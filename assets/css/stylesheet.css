@@ -72,13 +72,73 @@ body {
 
 .portfolio-title {
   height: 65vh;
-  background-color: rgba(205, 205, 205, 0.797);
+  background-color: rgba(205, 205, 205, 0.735);
   border: white solid 10px;
 }
 
+.portfolio-title-center {
+  position: absolute;
+  top: 25%;
+}
+
+
+/* .portfolio-svg-js {
+  position: absolute;
+  top: 10%;
+  left: 42%;
+}
+
+.portfolio-svg-react {
+  position: absolute;
+  bottom: 23%;
+  left: 20%;
+}
+
+.portfolio-svg-mongodb {
+  position: absolute;
+  top: 25%;
+  left: 22%;
+}
+
+.portfolio-svg-html {
+  position: absolute;
+  top: 42%;
+  right: 3%;
+}
+
+.portfolio-svg-css {
+  position: absolute;
+  top: 42%;
+  left: 3%;
+}
+
+.portfolio-svg-express {
+  position: absolute;
+  top: 25%;
+  right: 17%;
+}
+
+.portfolio-svg-node {
+  position: absolute;
+  bottom: 23%;
+  right: 14%;
+}
+
+.portfolio-svg-vs {
+  position: absolute;
+  bottom: 10%;
+  left: 42%;
+}  */
+
+
+
+
+
+
+
 .portfolio-rcfit7 {
   height: 65vh;
-  background-color: rgba(205, 205, 205, 0.66);
+  background-color: rgba(205, 205, 205, 0.521);
   border: white solid 10px;
 }
 
@@ -92,6 +152,10 @@ body {
   height: 65vh;
   background-color: rgba(205, 205, 205, 0.598);
   border: white solid 10px;
+}
+
+.portfolio a {
+  text-decoration: none;
 }
 
 /* .masthead-text {
