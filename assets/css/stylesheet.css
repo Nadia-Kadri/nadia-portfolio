@@ -19,6 +19,21 @@ body {
   z-index: 1;
 }
 
+.about-background {
+  height: 90vh;
+  min-height: 500px;
+  background-image: url("../images/cactus.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-title {
+  position: relative;
+  top: 8%;
+  z-index: 1;
+}
+
 .connect-email {
   background-color: rgba(96, 110, 96, 0.781);
   padding: 10px;
@@ -46,7 +61,7 @@ body {
   color: white;
 }
 
-.masthead-links {
+.header-links {
   height: 20vh;
 }
 
@@ -132,12 +147,13 @@ body {
   text-align: center;
   margin-right: 10px;
 }
+*/
 
 svg {
   width: 15%;
   margin: 8px;
   margin-right: 18px;
-} */
+} 
 
 @media (max-width: 580px) {
   .profile {
