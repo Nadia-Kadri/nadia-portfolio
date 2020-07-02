@@ -1,249 +1,180 @@
+html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
 body {
-  font-family: "Lato", sans-serif;
-  background-color:white;
+  margin: 0;
+  font-family: system-ui, sans-serif;
 }
 
-.header-background {
-  height: 80vh;
-  min-height: 500px;
-  background-image: url("../images/greenplants.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+/* Navbar */
+.cust-nav {
+  background-color: #65CCB8;
+  color: white; 
+  font-size: 25px;
+}
+.navbar-links a, .navbar-links span {
+  float: right;
+  color: #182628;
+  font-size: large;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
+
+/* Header */
+.wave-container {
+  background: white;
+  margin: 0;
+}
+.wave-container > svg {
+  display: block;
+}
 .header {
-  position: absolute;
-  left: 8%;
-  top: 8%;
-  z-index: 1;
+  height: 60vh;
+  background-color: #65CCB8;
+  margin: 0;
+  color: white;
 }
-
-.about-background {
-  height: 90vh;
-  min-height: 500px;
-  background-image: url("../images/cactus.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.header h1 {
+  font-family: 'Alice', serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-.about-title {
-  position: relative;
-  top: 4%;
-  z-index: 1;
-}
-
-.about-me-text-container {
-  height: 50vh;
-  overflow-y: scroll;
-}
-
-
-
-.connect-email {
-  background-color: rgba(96, 110, 96, 0.781);
-  padding: 10px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.connect-linkedin {
-  background-color: rgba(96, 110, 96, 0.562);
-  padding: 10px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
-.connect-github {
-  background-color: rgba(96, 110, 96, 0.384);
-  /* background-color: rgb(82, 114, 82); */
-  padding: 10px;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-
 .header a {
   text-decoration: none;
   color: white;
 }
+.connect-linkedin {
+  background-color: #182628;
+  border: 1px solid #182628;
+  padding: 10px;
+  margin: 3px;
+  font-size: medium;
+}
+.connect-github {
+  border: 1px solid white;
+  padding: 10px;
+  margin: 3px;
+  font-size: medium;
+}
+.connect-linkedin:hover, .connect-github:hover {
+  background-color: #182628;
+  border: none;
+}
+/* #header-accent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: red solid 1px;
+  z-index: 1;
+} */
 
-.header-links {
-  height: 20vh;
+
+/* About me */
+.about-me h1 {
+  font-family: 'Alice', serif;
 }
 
-.header-links a {
-  text-decoration: none;
-  color: black;
-}
 
+/* Portfolio */
 .portfolio-title {
   height: 65vh;
-  background-color: rgba(205, 205, 205, 0.735);
-  border: white solid 10px;
+  font-family: 'Alice', serif;
 }
-
 .portfolio-title-center {
   position: absolute;
   top: 25%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.portfolio-rcfit7 {
+.portfolio-project {
   height: 65vh;
-  background-color: rgba(205, 205, 205, 0.521);
-  border: white solid 10px;
 }
-
-.portfolio-mongoscraper {
-  height: 65vh;
-  background-color: rgba(205, 205, 205, 0.263);
-  border: white solid 10px;
+.portfolio-project img {
+  border: black solid 1px;
 }
-
-.portfolio-unwrapped {
-  height: 65vh;
-  background-color: rgba(205, 205, 205, 0.598);
-  border: white solid 10px;
+.portfolio-project h1 {
+  font-family: 'Alice', serif;
 }
-
-.portfolio a {
+.portfolio-project a {
   text-decoration: none;
 }
-
-svg {
+#portfolio svg {
   width: 15%;
   margin: 8px;
   margin-right: 18px;
 } 
 
 
-
-/* .contact-background {
-  height: 90vh;
-  width: 40ch;
-  min-height: 500px;
-  background-image: url("../images/greencontact.jpg");
-  background-size: cover;
-  background-position: right center;
-  background-repeat: no-repeat;
-}
-
-.contact-title {
-  position: relative;
-  top: 8%;
-  z-index: 1;
-} */
-
-@media (max-width: 580px) {
-  .profile {
-    width: 260px;
-  }
-  .header-name {
-    margin-top: 20px;
-    font-size: 30px;
-  }
-  .header-role {
-    margin-top: 3px;
-    margin-bottom: 40px;
-    font-size: 18px;
-  }
-  .header-links-text {
+@media (max-width: 500px) {
+  /* Navbar */
+  .cust-nav {
     font-size: 20px;
   }
+  .navbar-links a, .navbar-links span {
+    font-size: medium;
+    margin-left: 10px;
+  }
 
-  .portfolio-title-size {
-    font-size: 30px;
+  .profile {
+    width: 280px;
   }
-  .connect-email, .connect-linkedin, .connect-github {
-    font-size: 14px;
+  .header h1 {
+    font-size: 35px;
   }
-  .connect-info {
-    font-size: 14px;
+
+  .portfolio-title {
+    height: 35vh;
+  }
+  .portfolio-title-center {
+    position: absolute;
+    top: 8%;
+  }
+  .portfolio-project {
+    height: 55vh;
   }
 }
+@media (max-width: 420px) {
+  /* Navbar */
+  .cust-nav {
+    font-size: 20px;
+  }
+  .navbar-links a, .navbar-links span {
+    font-size: medium;
+    margin-left: 5px;
+  }
 
-@media (max-width: 380px) {
   .profile {
     width: 260px;
   }
-  .header-name {
-    margin-top: 20px;
-    font-size: 25px;
+  .header h1 {
+    font-size: 35px;
   }
-  .header-role {
-    margin-top: 10px;
-    font-size: 15px;
-  }
-  .portfolio-title-size {
-    font-size: 25px;
-  }
-  .portfolio-svg {
-    height: 170px;
-  }
-  .about-me-text {
-    font-size: 14px;
+
+  .portfolio-project {
+    height: 65vh;
   }
 }
+@media (max-width: 330px) {
+  /* Navbar */
+  .cust-nav {
+    font-size: 20px;
+  }
+  .navbar-links a, .navbar-links span {
+    font-size: medium;
+    margin-left: 5px;
+  }
 
+  .profile {
+    width: 240px;
+  }
+  .header h1 {
+    font-size: 30px;
+  }
 
-
-
-/* .portfolio-svg-js {
-  position: absolute;
-  top: 10%;
-  left: 42%;
+  .portfolio-project {
+    height: 75vh;
+  }
 }
-
-.portfolio-svg-react {
-  position: absolute;
-  bottom: 23%;
-  left: 20%;
-}
-
-.portfolio-svg-mongodb {
-  position: absolute;
-  top: 25%;
-  left: 22%;
-}
-
-.portfolio-svg-html {
-  position: absolute;
-  top: 42%;
-  right: 3%;
-}
-
-.portfolio-svg-css {
-  position: absolute;
-  top: 42%;
-  left: 3%;
-}
-
-.portfolio-svg-express {
-  position: absolute;
-  top: 25%;
-  right: 17%;
-}
-
-.portfolio-svg-node {
-  position: absolute;
-  bottom: 23%;
-  right: 14%;
-}
-
-.portfolio-svg-vs {
-  position: absolute;
-  bottom: 10%;
-  left: 42%;
-}  */

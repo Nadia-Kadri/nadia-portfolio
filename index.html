@@ -7,61 +7,56 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
     <title>Nadia Kadri Portfolio</title>
 </head>
 <body>
 
-  <div class="header-background"></div>
-
+  <nav class="navbar cust-nav">
+    <span class="navbar-name">Nadia Kadri</span>
+    <span class="navbar-links">
+      <a class="" href="assets/nadia-kadri-resume.pdf" target="_blank">Resume</a>
+      <a class="" href="#portfolio">Portfolio</a>
+      <span>&#8212&#8212&#8212</span>
+      <!-- NEED TO UPDATE ABOVE -->
+    </span>
+  </nav>
+  
   <div class="header">
-    <img class="profile" src="assets/images/profile.png" width="300px">
-    <div class="text-center display-4 header-name">Nadia Kadri</div>
-    <h3 class="text-center header-role">Software Engineer</h3>
-    <h6 class="text-center connect-info">Orlando, FL | (407) 883-6842</h6><br>
-    <div class="text-center">
-      <span class="connect-email">
-        <a href="mailto:nadiagrace96@gmail.com" target="_blank">Email</a>
-      </span>
-      <span class="connect-linkedin">
-        <a href="https://www.linkedin.com/in/nadia-kadri-334415b3/" target="_blank">LinkedIn</a>
-      </span>
-      <span class="connect-github">
-        <a href="https://github.com/Nadia-Kadri" target="_blank">GitHub</a>
-      </span>
-    </div>
-  </div>
-
-  <div class="header-links">
-    <div class="row h-100 align-items-center m-0">
-      <div class="col-4 text-center h4 header-links-text">
-        <a href="#about">About</a><br>
-        <a href="#about"><i class="fa fa-user-o" aria-hidden="true"></i></a>
-      </div>
-      <div class="col-4 text-center h4 header-links-text">
-        <a href="assets/nadia-kadri-resume.pdf" target="_blank">Resume</a><br>
-        <a href="assets/nadia-kadri-resume.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
-      </div>
-      <div class="col-4 text-center h4 header-links-text">
-        <a href="#portfolio">Portfolio</a><br>
-        <a href="#portfolio"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
-      </div>
-      <!-- <div class="col-3 text-center h4 header-links-text">
-        <div>Contact</div>
-        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-      </div> -->
-    </div>
-  </div>
-
-  <div class="about-background" id="about">
-    <div class="about-title">
-      <div class="text-center display-4 header-name mb-3">About Me</div>
-      <div class="row justify-content-center m-0 about-me-text-container">
-        <div class="col-10 about-me-text">
-          Hello! My name is Nadia and I am a Software Engineer. I graduated from the Univeristy of Central Florida in May 2018 with a Bachelor of Science in Business Administration and have since been working at Lockheed Martin as a Financial Analyst. Shortly after onboarding in my current role, my company implemented a new Material Requirements Planning Software System, SAP. Collaborating alongside Software Engineers, we worked to create and improve Business Intelligence reports that aligned with the new system. It was during this time that my interest in Software Engineering was sparked and I enrolled in the University of Central Florida Full Stack Coding Boot Camp.
-          <br><br>
-          The bootcamp exposed me to many new, powerful technologies which I used on multiple projects and pair programming in which I got to learn from my peers. Having completed the bootcamp, I now have a solid technical foundation of which I can build upon. While I have become proficient in the technologies I learned including JavaScript, Node.js, React.js, MySQL, MongoDB, and many others, I know there is still a considerable amount more I can learn and master. This seemingly limitless learning and opportunity for growth is what motivates me most as a Software Engineer. I look forward to my next role that challenges me to be creative, expand my knowledge, and work with my team to develop exceptional and high-quality web applications. 
+    <div class="row m-0">
+      <div class="col-sm-12 text-center">
+        <img class="profile" src="assets/images/profile.png" width="320px"><br>
+        <h1>Software Engineer &#x21a1</h1>
+        <div>
+          <span class="connect-linkedin">
+            <a href="https://www.linkedin.com/in/nadia-kadri-334415b3/" target="_blank">LinkedIn &#187</a>
+          </span>
+          <span class="connect-github">
+            <a href="https://github.com/Nadia-Kadri" target="_blank">GitHub &#187</a>
+          </span>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#65CCB8" fill-opacity="1" d="M0,192L80,170.7C160,149,320,107,480,122.7C640,139,800,213,960,213.3C1120,213,1280,139,1360,101.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+  </div>
+
+  <div class="container-fluid" id="about">
+    <div class="row">
+      <div class="col-sm-12 about-me">
+        <h1>About Me</h1>
+        <p>
+          Hello! My name is Nadia and I am a Software Engineer. I graduated from the Univeristy of Central Florida in May 2018 with a Bachelor of Science in Business Administration and have since been working at Lockheed Martin as a Financial Analyst. Shortly after onboarding in my current role, my company implemented a new Material Requirements Planning Software System, SAP. Collaborating alongside Software Engineers, we worked to create and improve Business Intelligence reports that aligned with the new system. It was during this time that my interest in Software Engineering was sparked and I enrolled in the University of Central Florida Full Stack Coding Boot Camp.
+        </p>
+        <p>
+          The bootcamp exposed me to many new, powerful technologies which I used on multiple projects and pair programming in which I got to learn from my peers. Having completed the bootcamp, I now have a solid technical foundation of which I can build upon. While I have become proficient in the technologies I learned including JavaScript, Node.js, React.js, MySQL, MongoDB, and many others, I know there is still a considerable amount more I can learn and master. This seemingly limitless learning and opportunity for growth is what motivates me most as a Software Engineer. I look forward to my next role that challenges me to be creative, expand my knowledge, and work with my team to develop exceptional and high-quality web applications. 
+        </p>
       </div>
     </div>
   </div>
@@ -116,66 +111,42 @@
         </div>
       </div>
 
-      <div class="col-md-6 portfolio-rcfit7">
-        <h1 class="text-center portfolio-title-size pt-4">RCFit7</h1>
-        <p class="text-center">A web application for fitness owners to create workout classes, add personal trainers, and have users sign-up for classes.</p>
-        <div class="text-center mb-4">
+      <div class="col-md-6 portfolio-project">
+        <h1 class="text-center pt-3">RCFit7</h1>
+        <img src="assets/images/rcfit7.jpg" height="200px" class="mx-auto d-block"/> 
+        <div class="text-center mt-2">
           <a href="https://github.com/Nadia-Kadri/RCFit7" target="_blank" class="fa fa-github"> Github Repo | </a>
           <a href="https://rcfit7-react-app.herokuapp.com/" target="_blank" class="fa fa-check-circle"> Deployed Link</a>
         </div>
-        <img src="assets/svg/rcfit.svg" height="200px" class="mx-auto d-block portfolio-svg"/>
+        <p class="text-center mt-2">A web application for fitness owners to create workout classes, add personal trainers, and have users sign-up for classes.</p>
       </div>
     </div>
   
     <div class="row">
-      <div class="col-md-6 portfolio-mongoscraper">
-        <h1 class="text-center portfolio-title-size pt-4">Mongo Scraper</h1>
-        <p class=text-center>A web application for users to scrape articles from The Wall Street Journal website, save articles to their account, and add notes to articles of their choice.</p>
-        <div class="text-center mb-4">
+      <div class="col-md-6 portfolio-project">
+        <h1 class="text-center pt-3">Mongo Scraper</h1>
+        <img src="assets/images/mongoscraper.png" height="200px" class="mx-auto d-block"/>
+        <div class="text-center mt-2">
           <a href="https://github.com/Nadia-Kadri/MongoScraper" target="_blank" class="fa fa-github"> Github Repo | </a>
           <a href="https://mongo-scraper-wsj.herokuapp.com/" target="_blank" class="fa fa-check-circle"> Deployed Link</a>
         </div>
-        <img src="assets/svg/mongoscraper.svg" height="240px" class="mx-auto d-block portfolio-svg"/>
+        <p class="text-center mt-2">A web application for users to scrape articles from The Wall Street Journal website, save articles to their account, and add notes to articles of their choice.</p>
       </div>
 
-      <div class="col-md-6 portfolio-unwrapped">
-        <h1 class="text-center portfolio-title-size pt-4">UnWrapped</h1>
-        <p class="text-center">A party planning web application that allows users to create and RSVP to parties while also keeping track of guests, gifts and if they sent a thank you note.</p>
-        <div class="text-center mb-4">
+      <div class="col-md-6 portfolio-project">
+        <h1 class="text-center pt-3">UnWrapped</h1>
+        <img src="assets/images/unwrapped.png" height="200px" class="mx-auto d-block"/>
+        <div class="text-center mt-2">
           <a href="https://github.com/sengland88/unWrapped" target="_blank" class="fa fa-github"> Github Repo | </a>
           <a href="http://bit.ly/3aqd0by" target="_blank" class="fa fa-check-circle"> Deployed Link</a>
         </div>
-        <img src="assets/svg/unwrapped.svg" height="200px" class="mx-auto d-block portfolio-svg"/>
+        <p class="text-center mt-2">A party planning web application that allows users to create and RSVP to parties while also keeping track of guests, gifts and if they sent a thank you note.</p>
       </div>
     </div>
   </div>
 
-  <!-- <div class="contact-background" id="contact">
-    <div class="contact-title">
-      <div class="display-4 header-name mb-3">Don't be a stranger</div>
-      <h3 class="">Reach out!</h3>
-    </div>
-    <div class="contact-info">
-      <div class="h6"></div>
-    </div>
-  </div> -->
-
-  <!-- <li>
-    <div class="cv-table-left"><i class="cv-icon fa fa-phone-square"></i>Phone</div>
-    <div class="cv-table-right">407-883-6842</div>
-  </li>
-  <li>
-    <div class="cv-table-left"><i class="cv-icon fa fa-envelope"></i>E-mail</div>
-    <div class="cv-table-right"><a href="mailto:nadiagrace96@gmail.com" target="_blank">nadiagrace96@gmail.com</a>
-    </div>
-  </li> -->
-
-
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script> -->
-  
-  
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
