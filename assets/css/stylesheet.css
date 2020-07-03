@@ -37,6 +37,7 @@ body {
 }
 .header {
   height: 60vh;
+  min-height: 400px;
   background-color: #2C2B30;
   margin: 0;
   color: white;
@@ -90,7 +91,7 @@ body {
   width: 100%;
   height: auto;
 }
-.overlay {
+.overlay-rcfit, .overlay-mongoscraper, .overlay-unwrapped {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -98,13 +99,13 @@ body {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 0.85;
   transition: .7s ease;
   background-color: #000;
 }
-.portfolio-rcfit:hover > .overlay, .portfolio-mongoscraper:hover > .overlay, .portfolio-unwrapped:hover > .overlay {
+/* .portfolio-rcfit:hover > .overlay-rcfit, .portfolio-mongoscraper:hover > .overlay-mongoscraper, .portfolio-unwrapped:hover > .overlay-unwrapped {
   opacity: .85;
-}
+} */
 .overlay-text {
   color: white;
   position: absolute;
@@ -138,6 +139,11 @@ body {
   font-size: 15px;
   color: black;
 }
+
+
+
+
+
 
 
 

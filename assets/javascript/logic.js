@@ -31,35 +31,43 @@
 // });
 
 $(document).ready(function(){
-  // $('.data-slick-center').slick({
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   speed: 2000,
-  //   dots: true,
-  //   // centerMode: true,
-  //   // centerPadding: '60px',
-  //   slidesToShow: 1,
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         arrows: false,
-  //         // centerMode: true,
-  //         centerPadding: '40px',
-  //         slidesToShow: 1
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         arrows: false,
-  //         // centerMode: true,
-  //         // centerPadding: '40px',
-  //         slidesToShow: 1
-  //       }
-  //     }
-  //   ]
-  // });
+  $('.overlay-rcfit').hide();
+  $('.overlay-mongoscraper').hide();
+  $('.overlay-unwrapped').hide();
+  let overlayRcfitShow = false;
+  let overlayMongoscraperShow = false;
+  let overlayUnwrappedShow = false;
+  
+  $('.portfolio-rcfit').on('click', function () {
+    if (overlayRcfitShow === false) {
+      $('.overlay-rcfit').show();
+      overlayRcfitShow = true;
+    } else {
+      $('.overlay-rcfit').hide();
+      overlayRcfitShow = false;
+    }
+  });
+
+  $('.portfolio-mongoscraper').on('click', function () {
+    if (overlayMongoscraperShow === false) {
+      $('.overlay-mongoscraper').show();
+      overlayMongoscraperShow = true;
+    } else {
+      $('.overlay-mongoscraper').hide();
+      overlayMongoscraperShow = false;
+    }
+  });
+
+  $('.portfolio-unwrapped').on('click', function () {
+    if (overlayUnwrappedShow === false) {
+      $('.overlay-unwrapped').show();
+      overlayUnwrappedShow = true;
+    } else {
+      $('.overlay-unwrapped').hide();
+      overlayUnwrappedShow = false;
+    }
+  });
+
   $('.data-slick-auto-carousel').slick({
     autoplay: true,
     autoplaySpeed: 700,
@@ -83,6 +91,7 @@ $(document).ready(function(){
       }
     ]
   });
+
 });
 
 
