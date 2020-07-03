@@ -31,31 +31,54 @@
 // });
 
 $(document).ready(function(){
-  $('.data-slick-center').slick({
+  // $('.data-slick-center').slick({
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   speed: 2000,
+  //   dots: true,
+  //   // centerMode: true,
+  //   // centerPadding: '60px',
+  //   slidesToShow: 1,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: false,
+  //         // centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 1
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         // centerMode: true,
+  //         // centerPadding: '40px',
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ]
+  // });
+  $('.data-slick-auto-carousel').slick({
     autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 2000,
-    dots: true,
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 2,
+    autoplaySpeed: 700,
+    speed: 1700,
+    arrows: false,
+    slidesToShow: 6,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 4
         }
       },
       {
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 4
         }
       }
     ]
