@@ -82,12 +82,7 @@ body {
 
 /* Portfolio */
 .portfolio-title {
-  height: 65vh;
   font-family: 'Alice', serif;
-}
-.portfolio-title-center {
-  position: absolute;
-  top: 25%;
 }
 .portfolio-project {
   height: 65vh;
@@ -108,6 +103,18 @@ body {
 } 
 
 
+
+
+
+/* data slick practice */
+.portfolio-data-slick {
+  background-color: pink;
+}
+
+
+
+
+
 @media (max-width: 500px) {
   /* Navbar */
   .cust-nav {
@@ -125,13 +132,6 @@ body {
     font-size: 35px;
   }
 
-  .portfolio-title {
-    height: 35vh;
-  }
-  .portfolio-title-center {
-    position: absolute;
-    top: 8%;
-  }
   .portfolio-project {
     height: 55vh;
   }
