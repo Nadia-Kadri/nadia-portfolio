@@ -106,6 +106,9 @@ body {
 /* .portfolio-rcfit:hover > .overlay-rcfit, .portfolio-mongoscraper:hover > .overlay-mongoscraper, .portfolio-unwrapped:hover > .overlay-unwrapped {
   opacity: .85;
 } */
+.portfolio-rcfit:hover, .portfolio-mongoscraper:hover, .portfolio-unwrapped:hover {
+  cursor: pointer;
+}
 .overlay-text {
   color: white;
   position: absolute;
