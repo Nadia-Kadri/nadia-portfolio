@@ -38,6 +38,7 @@ body {
 .header {
   height: 60vh;
   min-height: 400px;
+  max-height: 600px;
   background-color: #2C2B30;
   margin: 0;
   color: white;
@@ -169,13 +170,13 @@ body {
 
   /* Portfolio */
   .overlay-text h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
   .overlay-text p, .overlay-text a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 425px) {
   /* Navbar */
   .cust-nav {
     font-size: 20px;
@@ -194,13 +195,13 @@ body {
 
   /* Portfolio */
   .overlay-text h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .overlay-text p, .overlay-text a {
-    font-size: 8px;
+    font-size: 11px;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 370px) {
   /* Navbar */
   .cust-nav {
     font-size: 20px;
@@ -215,5 +216,13 @@ body {
   }
   .header h1 {
     font-size: 30px;
+  }
+
+  /* Portfolio */
+  .overlay-text h3 {
+    font-size: 20px;
+  }
+  .overlay-text p, .overlay-text a {
+    font-size: 10px;
   }
 }
